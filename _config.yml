@@ -1,0 +1,100 @@
+# ---------------- #
+#   Main Configs   #
+# ---------------- #
+baseurl:
+url: 
+date_format: "ordinal"
+title: 小盒
+subtitle: "xiaohe's blog"
+description: "write for someone who called xiaohe"
+keywords: xiaohe
+favicon: /favicon.ico
+timezone: Asia/Shanghai
+encoding: "utf-8"
+side_bar_repo_limit: 5
+
+# ---------------- #
+#      Author      #
+# ---------------- #
+author: xiao he
+organization: 暂无
+organization_url: 暂无
+github_username: xiaohe9569
+location: BeiJing, China
+email: http://yanghh9569@163.com
+
+# ---------------- #
+#    Navigation    #
+# ---------------- #
+navs:
+  -
+    href: /
+    label: 首页
+
+  -
+    href: /categories/
+    label: 分类
+
+  -
+    href: /wiki/
+    label: 维基
+
+  -
+    href: /links/
+    label: 链接
+
+  -
+    href: /about/
+    label: 关于
+
+# ---------------- #
+#       RSS        #
+# ---------------- #
+subscribe_rss: /feed.xml
+
+# ---------------- #
+#      Jekyll      #
+# ---------------- #
+markdown: kramdown
+kramdown:
+    input: GFM
+highlighter: rouge
+paginate: 8
+lsi: false
+quiet: false
+excerpt_separator: "\n\n"
+permalink: /:year/:month/:day/:title/
+gems:
+    - jekyll-github-metadata
+    - rouge
+#     - jekyll-html-pipeline
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-feed
+    - jemoji
+#     - jekyll-mentions
+collections:
+    wiki:
+        output: true
+        permalink: /wiki/:path/
+
+repository: mzlogin/mzlogin.github.io
+
+# ---------------- #
+#      Comments    #
+# ---------------- #
+# support provider: disqus, netease_gentie, gitment
+comments_provider: gitment
+# !!!重要!!! 请修改下面这些信息为你自己申请的
+# !!!Important!!! Please modify infos below to yours
+# 如果使用 gitment，请参考 https://imsun.net/posts/gitment-introduction/ 修改 _includes/comments.html 里的对应内容
+disqus_username: mzlogin
+netease_gentie_key: 560ed243b708465d82d5a0a5f3b83da1
+# 在使用其它评论组件时可点击显示 Disqus
+lazy_load_disqus : true
+
+# ---------------- #
+#    Analytics     #
+# ---------------- #
+google:
+    analytics_id: UA-80669434-1

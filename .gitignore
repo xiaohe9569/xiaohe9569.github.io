@@ -1,0 +1,10 @@
+_site/
+*.swp
+*.~vsd
+\#*\#
+*.bak
+.git
+.gitinore
+.DS_Store
+Gemfile.lock
+
