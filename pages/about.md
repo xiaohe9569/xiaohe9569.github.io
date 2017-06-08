@@ -1,32 +1,39 @@
 ---
 layout: page
-title: About
-description: 打码改变世界
-keywords: Zhuang Ma, 马壮
+title: About Me
+description: write for someone called xiaohe
+keywords: xiaohe
 comments: true
-menu: 关于
+menu: 关于我
 permalink: /about/
 ---
 
-我是马壮，码而生，码而立。
+I am ...
 
-仰慕「优雅编码的艺术」。
+## 坚信
 
-坚信熟能生巧，努力改变人生。
+* Continuous Learning
+* 你获得的回报跟你创造的价值正相关
+* 代码改变世界
 
-## 联系
+## 联系我
 
-{% for website in site.data.social %}
-* {{ website.sitename }}：[@{{ website.name }}]({{ website.url }})
-{% endfor %}
+* GitHub：<https://github.com/xiaohe9569>
+* 博客：[{{ site.title }}]({{ site.url }})
+* 知乎: 
 
 ## Skill Keywords
 
-{% for category in site.data.skills %}
-### {{ category.name }}
+#### Software Language Keywords
 <div class="btn-inline">
-{% for keyword in category.keywords %}
-<button class="btn btn-outline" type="button">{{ keyword }}</button>
-{% endfor %}
+    {% for keyword in site.skill_language_keywords %}
+    <button class="btn btn-outline" type="button">{{ keyword }}</button>
+    {% endfor %}
 </div>
-{% endfor %}
+
+#### Web Developer Keywords
+<div class="btn-inline">
+    {% for keyword in site.skill_web_app_keywords %}
+    <button class="btn btn-outline" type="button">{{ keyword }}</button>
+    {% endfor %}
+</div>
